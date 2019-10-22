@@ -1,8 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 #thishead{
     text-align: center;
     height: 60px;
     background-color: burlywood;
     color:white;
+  
+}
+#thishead h1{
+    vertical-align: -webkit-baseline-middle;
 }
 #thiscontent{
     height: 2500px;
