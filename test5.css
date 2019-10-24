@@ -5,13 +5,11 @@
 #thishead{
     text-align: center;
     height: 60px;
-    background-color: burlywood;
+    background-color: rgb(209, 180, 136);
     color:white;
   
 }
-#thishead h1{
-    vertical-align: -webkit-baseline-middle;
-}
+
 #thiscontent{
     height: 2500px;
     text-align: center;
@@ -20,30 +18,74 @@
     
     height: 100%;
     width: 150px;
-    background-color: rgb(243, 224, 184);
+    background-color: rgb(250, 249, 242);
     float: left;
 
 }
 #thisright{
     height: 100%;
- 
+  position: absolute;
+  top: 60px;
+  left: 180px;
+}
+#thisright .p1{
+    text-align: left;
+   
 }
 #footer{
    padding-top: 30px;
     height: 100px;
-    background-color: burlywood;
+    background-color: rgb(209, 180, 136);
     color: white;
     text-align: center;
 }
 .table1{
-   
+   border-spacing: 0;
    margin: 0 auto;
-    border: solid 5px yellow;
+    border: solid 1px yellow;
+    
 }
 .table1 td{
     border: 1px solid yellow;
     width: 200px;
+
+}
+.td1::before{
+    content: "￥";
 }
 .headtu{
     margin: 0 auto;
+}
+.headtu img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ul li a{
+    font-size: 30px;
+    display: block;
+    width: 150px;
+    height: 40px;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(209, 180, 136);;
+    color:  rgb(209, 180, 136);
+
+}
+ul li a:hover{
+    background-color: rgb(209, 180, 136);;
+    color: white;
+   
+}
+ul li a:active{
+    color: #000;
+}
+
+ul li:last-child a{
+    border-bottom: none;
+}
+p {
+    text-indent: 2em;
+}
+
+p::first-letter{
+    font-size: 32px;
 }
