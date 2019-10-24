@@ -4,7 +4,8 @@
 }
 #thishead{
     text-align: center;
-    height: 60px;
+   height: 64px;
+   line-height: 64px;
     background-color: rgb(209, 180, 136);
     color:white;
     
@@ -38,6 +39,8 @@
     background-color: rgb(209, 180, 136);
     color: white;
     text-align: center;
+    line-height: 100px;
+    vertical-align: middle;
 }
 .table1{
    border-spacing: 0;
