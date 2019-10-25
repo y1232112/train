@@ -48,6 +48,17 @@
     padding-bottom: 50px;
     padding-right: 50px;
 }
+#thisright .p1 img{
+    width: 400px;
+    height: 300px;
+    box-shadow: 10px 10px 5px #888888;
+    
+}
+#thisright .p1 img:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
+    border: solid 1px black;
+}
 #footer{
    
     height: 100px;
@@ -70,7 +81,7 @@
 }
 .table1 td{
     border: 1px solid yellow;
-    width: 200px;
+    width: 301px;
 
 }
 .td1::before{
@@ -82,6 +93,11 @@
 .headtu img{
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 10px 10px 5px #888888;
+}
+.headtu img:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
 }
 ul {
     position: sticky;
