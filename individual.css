@@ -1,0 +1,36 @@
+body{
+    margin: 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+#thishead{
+    height: 10%;
+    line-height: 10%;
+    background-color: brown;
+}
+#thiscontent{
+   height: 60%;
+   width: 100%;
+   background-color: blueviolet;
+   
+
+    
+}
+#thisleft{
+    width: 10%;
+    height: 100%;
+}
+#content{
+   width: 80%;
+   height: 100%;
+}
+#thisright{
+    width: 10%;
+    height: 100%;
+}
+
+#footer{
+    height: 30%;
+    background-color: red;
+}
