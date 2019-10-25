@@ -4,8 +4,8 @@
 }
 #thishead{
     text-align: center;
-  /*  height: 64px;
-   line-height: 64px; */
+   height: 80px;
+   line-height: 80px;
     background-color: rgb(209, 180, 136);
     color:white;
     
@@ -42,7 +42,8 @@
 }
 #footer{
    
-   /*  height: 100px; */
+    height: 100px;
+    line-height: 100px;
     background-color: rgb(209, 180, 136);
     color: white;
     text-align: center;
