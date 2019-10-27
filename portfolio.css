@@ -4,6 +4,9 @@
   
    
 }
+body{
+    /* width: 1720px; */
+}
 /* html,body{
     height: 100%;
 } */
@@ -17,6 +20,15 @@
      color: white;
   /*  min-height: 10%; */
     background-color: red;
+}
+#_head{
+    /* width: 1303px; */
+    margin-left: 0px;
+
+  /*   margin-right: 0px; */
+} 
+#_head span{
+    width: 1030px;
 }
 #thishead img{
     height: 30px;
@@ -39,7 +51,7 @@
     background-color: white;
     /* padding-bottom: 250px; */
   
-   
+ /*   text-align: center; */
    
 }
 #footer{
@@ -55,11 +67,17 @@
 
 #content{
     text-align: center;
-    
-    background-color: white;
-   margin-left: 215px;
-   margin-right: 215px;
+    width: 1088px;
+    background-color: royalblue;
+    margin: 0 auto;
+  /*  margin-left: 215px;
+   margin-right: 215px; */
   
+}
+#content span:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
+    border: solid 6px black;
 }
 .img_content img{
     width: 250px;
@@ -82,6 +100,7 @@
 }
 .img_content{
     margin-top: 30px;
+     width: 1088px;
 }
 .img_content span{
     background-color: wheat;
@@ -89,7 +108,7 @@
     width: 250px;
     text-align: center;
     border: solid 5px wheat;
-    border-bottom: solid 35px wheat;
+    border-bottom: solid 5px wheat;
     float: left;
     margin-right: 5px;
     margin-left: 5px;
@@ -97,14 +116,14 @@
    
 
 }
-#last_img{
-    float: right;
-}
+ #last_img{
+   /*  float: right; */
+} 
 /* #content hr{
     margin-bottom: 30px;
 } */
 .menu_info{
-    width: 100%;
+    width: 1088px;
     margin-top: 40px;
     margin-bottom: 5px;
     font-size: 35px;
@@ -116,8 +135,8 @@
 #erweima{
     width: 100px;
     height: 100px;
-    float: right;
-    margin-right: 230px;
+    float: left;
+    margin-right: 5px;
     margin-top: 100px;
 }
 #erweima img{
@@ -128,29 +147,42 @@
 }
 #footer_info{
     color: white;
-    width: 800px;
-    margin-left: 230px;
-    margin-right: 50px;
+    width: 700px;
+    min-height: 150px;
+    margin-left: 30px;
+    margin-right: 150px;
     margin-top: 100px;
     float: left;
 }
 #last_bottom{
-    margin-left: 215px;
-    margin-right: 215px;
+    margin-left: 30px;
+    /* margin-right: 215px; */
     clear: both;
     color: white;
     text-align: center;
-    margin-top: 500px;
+    margin-top: 800px;
+}
+#last_bottom hr{
+    margin-right: 30px;
+}
+#_footer{
+    width: 1088px;
+    height: 600px;
+    margin-left: 215px;
+    margin: 0 auto;
+    
 }
 /* 下拉菜单 */
 .dropbtn {
     background-color: red;
     color: white;
-    padding: 12px;
+   /*  padding: 12px; */
+  /*  height: 40px; */
+   line-height: 40px;
     font-size: 12px;
     border: none;
     cursor: pointer;
-   
+  
 }
 .dropbtn:hover{
     color: #000;
@@ -159,8 +191,8 @@
 .dropdown {
     position: relative;
     display: inline-block;
-    float: right;
-    margin-right: 215px; 
+    /* float: right; */
+   
 }
 
 .dropdown-content {
