@@ -1,0 +1,194 @@
+*{
+    margin: 0;
+    padding: 0;
+  
+   
+}
+/* html,body{
+    height: 100%;
+} */
+#wrap{
+    border: solid 1px black;
+    
+}
+
+#thishead{
+     height: 40px;
+     color: white;
+  /*  min-height: 10%; */
+    background-color: red;
+}
+#thishead img{
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+#thishead span{
+    height: 40px;
+    line-height: 40px;
+    margin-left: 215px;
+   /*  margin-right: 215px; */
+}
+#_middle{
+   /*  min-height: 90%; */
+ /*  padding-top: 50px; */
+ /*  padding-bottom: 50px; */
+    background-color: white;
+    /* padding-bottom: 250px; */
+  
+   
+   
+}
+#footer{
+   
+  
+    
+    width: 100%;
+    background-color: brown;
+    padding-bottom: 2000px;/*  底部补白无穷大*/
+    margin-bottom: -2000px;/* 底部边界负无穷大 */
+    padding-top: 10px;
+}
+
+#content{
+    text-align: center;
+    
+    background-color: white;
+   margin-left: 215px;
+   margin-right: 215px;
+  
+}
+.img_content img{
+    width: 250px;
+    height: 350px;
+  /*   border: solid 5px wheat;
+   border-bottom: solid 35px wheat; */
+   /* z-index: -1; */
+  
+  
+   /*  padding-right: 100px; */
+    /* display: block;
+    float: left; */
+}
+.img_content h6{
+    
+    width: 250px;
+    clear: both;
+    
+   
+}
+.img_content{
+    margin-top: 30px;
+}
+.img_content span{
+    background-color: wheat;
+    display: block;
+    width: 250px;
+    text-align: center;
+    border: solid 5px wheat;
+    border-bottom: solid 35px wheat;
+    float: left;
+    margin-right: 5px;
+    margin-left: 5px;
+   
+   
+
+}
+#last_img{
+    float: right;
+}
+/* #content hr{
+    margin-bottom: 30px;
+} */
+.menu_info{
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 35px;
+    clear: both;
+  
+    
+}
+/* 二维码 */
+#erweima{
+    width: 100px;
+    height: 100px;
+    float: right;
+    margin-right: 230px;
+    margin-top: 100px;
+}
+#erweima img{
+    width: 100px;
+    height: 100px;
+    /*  float: right; */
+   /*  margin-right: 215px;  */
+}
+#footer_info{
+    color: white;
+    width: 800px;
+    margin-left: 230px;
+    margin-right: 50px;
+    margin-top: 100px;
+    float: left;
+}
+#last_bottom{
+    margin-left: 215px;
+    margin-right: 215px;
+    clear: both;
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+}
+/* 下拉菜单 */
+.dropbtn {
+    background-color: red;
+    color: white;
+    padding: 12px;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+   
+}
+.dropbtn:hover{
+    color: #000;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+    margin-right: 215px; 
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:  #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: wheat;
+}
+/*  */
+#_blank{
+    clear: both;
+    height: 10px;
+}
