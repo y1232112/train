@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品的添加和删除</title>
+    <style>
+    .danger{
+    color: red;
+    }
+    </style>
+</head>
+<body>
+    <h2>商品列表的添加和删除</h2>
+    <div id="message"></div>
+    <ul id="goods">
+        <li>苹果</li>
+
+    </ul>
+    <div>
+        <button id="delAll">删除所有商品</button>
+    </div>
+    <div>
+        <span>名称:</span>
+        <input type="text" id="name">
+        <button id="add">添加</button>
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script>
+     $(document).ready(
+         function(){
+/*  */
+            $('#add').click(function(){
+                console.log('value:',$('#name').val());
+             $('#goods').append('<li>'+$('#name').val()+'</li>');
+             $('#message').html('添加了商品:'+$('#name').val());
+             $('message').removeClass('danger');
+             $('#goods li').click(function(){
+                 $('#message').html('删除了商品：'+$(this).text());
+                 $('#message').addClass('danger');
+                 $(this).remove();
+             });
+            });
+/*  */
+   $('#goods li').click(function(){
+                 $('#message').html('删除了商品：'+$(this).text());
+                 $('#message').addClass('danger');
+                 $(this).remove();
+             });
+/*  */
+             $('#delAll').click(function(){
+                   $('#goods li').remove();
+             });
+       
+     });
+
+    
+    </script>
+
+</body>
+</html>
