@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>about</title>
+   <link rel="stylesheet" href="about.css">
+   <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak=WgdTTKQbzPGZc6kmSSLWnwlcHkmWwb73"></script>
+   <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script> 
+    <style type="text/css">  
+        html{height:100%}  
+        body{height:100%;margin:0px;padding:0px}  
+        #container{height:100%}  
+    </style>  
+</head>
+<body>
+    <div id="wrap">
+            <div id="_head"><!-- 头部 -->
+                <div id="head_link">
+                  
+                        <div id="head_left">   
+                            <img src="001.png" alt="">
+                            <span>约电影</span> 
+                        </div>
+                     
+                        <div id="head_right">
+                            <ul>
+                                    <li><a href="content.html">我的目录</a></li>
+                                    <li><a href="index.html">首页</a></li>
+                                    <li><a href="news.html">新闻</a></li>
+                                    <li><a href="about.html">关于我们</a></li>
+                            </ul>
+                        </div>
+           
+                </div>
+              <!-- 
+                <div id="head_img">
+                    <img src="006.jpg" alt="">
+                </div> -->
+             
+            </div>
+<!--  -->
+    <div id="content">
+        <div id="content_left">
+                    <div id="container"></div>
+        </div>
+        <div id="content_right">
+            <div id="script">
+                    <p>
+                            诛仙》是当代作家萧鼎创作的一部长篇小说。该小说约创作于2003年至2007年。
+                            2003年3月在中国台湾开始出版，2005年4月中国大陆朝华出版社出版了前六册，
+                            后两册开始转由花山文艺出版社出版。
+                    </p>
+                    <br>
+                    <p>
+                            <img src="address-l.png" alt="">福州--高新区
+                    </p>
+                    <br>
+                    <p>
+                            <img src="mail-l.png" alt="">
+                            example@qq.com
+                    </p>
+                    <br>
+                    <p>
+                            <img src="customservice-f.png" alt="">
+                            050-140-13
+                    </p>
+            </div>
+            <div class="about_a"></div>
+            <div class="about_a"></div>
+            <div class="about_a"></div>
+     </div>
+        <div id="_blank"></div>
+    </div>
+
+<!--  -->
+<!--  -->
+<div id="footer"><!-- 页脚 -->
+    <div id="tubiao_area">
+        <div class="tubiao_left">
+            <div class="tubiao_block">
+                  <img src="address-l.png" alt="">
+                  <p>福州--高新区</p>
+            </div>
+
+            <div class="tubiao_block">
+                    <img src="mail-l.png" alt="">
+                    <p>example@qq.com</p>
+              </div>
+              <div class="tubiao_block">
+                    <img src="customservice-f.png" alt="">
+                    <p>050-140-13</p>
+              </div>
+            <!-- ------------- -->
+           
+   
+        </div>
+        <div id="tubiao_right">
+             <img src="70.jpg" alt="">
+             <p>扫一扫</p>
+        </div>
+
+    </div>
+    <div class="footer_bottom"> 
+        <hr>
+          <p>版权所有@请勿抄袭</p>
+    </div>
+
+</div>
+    </div>
+    <!--------------------------------------  -->
+    <script>
+            var map = new BMap.Map("container");          // 创建地图实例  
+                    var point = new BMap.Point(116.404, 39.915);  // 创建点坐标  
+                    map.centerAndZoom(point, 15);   
+                    </script>
+</body>
+</html>

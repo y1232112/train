@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 头部 */
+#head_link{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(237, 240, 228, 0.925);
+    height: 50px;
+   padding-left: 175px;
+   padding-right: 175px;
+}
+#head_left{
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
+#head_right{
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+#head_link img{
+        height: 22px;
+        width: 22px;
+        
+}
+#head_link li{
+    display: inline;
+    word-break: keep-all;
+    font-size: 12px;
+   
+ 
+}
+#_head ul{
+    display: inline;
+   
+    
+
+
+}
+/*  */
+/* 页脚区域 */
+#footer{
+    width: 1200px;
+    background-color: rgba(237, 240, 228, 0.925);
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+#tubiao_area{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+   /*  background-color: blue; */
+    position: relative;
+    
+}
+#tuviao_area p{
+    font-size: 12px;
+}
+.tubiao_left{
+    width: 1200px;
+    height: 250px;
+    padding-top: 25px;
+/*     display: inline-block; */
+ /*    background-color: brown; */
+ 
+}
+.tubiao_left img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    
+}
+#tubiao_right{
+    width: 360px;
+    height: 250px;
+  /*   display: inline-block;
+    float: right; */
+    position: absolute;
+    top:5px;
+    left: 840px;
+    text-align: center;
+}
+#tubiao_right img{
+        width: 190px;
+        height: 190px;
+
+}
+.tubiao_block{
+    width: 275px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+}
+.footer_bottom {
+    width: 1200px;
+   margin-top: 50px;
+   text-align: center;
+   padding-bottom: 60px;
+}
+/* 中部---------------------------------------------- */
+#middle_{
+    width: 1200px;
+    padding-left: 175px;
+    padding-right: 175px;
+    margin: 25px auto;
+    text-align: center;
+    
+}
+#content img{
+    width: 800px;
+    height: 800px;
+}

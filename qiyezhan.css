@@ -1,0 +1,260 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+#head_link{
+    width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(237, 240, 228, 0.925);
+    height: 50px;
+   padding-left: 175px;
+   padding-right: 175px;
+}
+#head_left{
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+}
+#head_right{
+    width: 400px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+#head_link img{
+        height: 22px;
+        width: 22px;
+        
+}
+#head_link li{
+    display: inline;
+    word-break: keep-all;
+    font-size: 12px;
+   
+ 
+}
+#_head ul{
+    display: inline;
+   
+    
+
+
+}
+#head_img img{
+   /*  height: 400px; */
+    width: 1550px;
+    display: block;
+    margin: 0 auto;
+}
+/* 内容块 */
+#content_wrap{
+    width: 1200px;
+    /* background-color: blueviolet; */
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+#content_wrap h4{
+   padding-top: 25px;
+}
+/* 服务范围 */
+#serve_area{
+    width: 1196px;
+    margin: 25px auto;
+    text-align: center;
+    border: solid #777 2px;
+}
+.img_serve{
+    width: 280px;
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: white solid 1px;
+}
+.img_serve:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
+    border: solid 1px black;
+}
+.img_serve img{
+    width: 50px;
+    height: 50px;
+}
+/* 团队介绍 */
+#description_team{
+    width: 1200px;
+    margin: 0 auto;
+    /* text-align: center; */
+ 
+}
+.role{
+    width: 600px;
+    height: 430px;
+    display: inline-block;
+ 
+   
+}
+.role_description{
+    width: 600px;
+    height: 430px;
+    display: inline-block;
+   float: right;
+   position: relative;
+}
+
+.descript_body {
+    margin-left: 25px;
+    padding-right: 25px;
+}
+#float_l{
+    float: left;
+}
+
+h4{
+    text-align: center;
+}
+.descript_footer {
+    width: 550;
+ position: absolute;
+ margin-left: 25px;
+ margin-right: 25px;
+ bottom: 5px;
+ 
+}
+.descript_footer hr{
+    width: 200px;
+    margin: 10px auto;
+}
+.descript_footer span{
+    font-weight: bold;
+}
+/* .float_r{
+    
+    float: right;
+} */
+.role_description h4{
+    text-align: center;
+   
+}
+.role img{
+    display: inline-block;
+    width: 600px;
+  height: 430px;
+  margin: 0;
+  padding: 0;
+}
+.role img:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
+   /*  border: solid 6px black; */
+}
+.role_bar{
+    width: 1200px;
+    height: 430px;
+    margin-top: 25px;
+}
+/* 新闻动态 */
+#news{
+    width: 1200px;
+}
+.new_info #new li{
+    width: 200px;
+    height: 300px;
+  list-style: none;
+   float: left;
+   margin-left: 80px;
+   border: solid 1px white;
+}
+.new_info{
+    padding-bottom: 15px;
+}
+#news h4{
+    font-weight: bold;
+}
+#news p{
+    font-size: 12px;
+}
+.new img{
+   width: 200px;
+   height: 200px;
+   
+}
+#new img:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
+   /*  border: solid 1px black; */
+}
+#new li:hover{
+    filter:alpha(Opacity=50);
+    -moz-opacity:0.5;opacity: 0.5;
+    border: solid 1px black;
+}
+/* 页脚区域 */
+#footer{
+    width: 1200px;
+    background-color: rgba(237, 240, 228, 0.925);
+    margin: 0 auto;
+    padding-left: 175px;
+    padding-right: 175px;
+}
+#tubiao_area{
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+   /*  background-color: blue; */
+    position: relative;
+    
+}
+#tuviao_area p{
+    font-size: 12px;
+}
+.tubiao_left{
+    width: 1200px;
+    height: 250px;
+    padding-top: 25px;
+/*     display: inline-block; */
+ /*    background-color: brown; */
+ 
+}
+.tubiao_left img{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+    
+}
+#tubiao_right{
+    width: 360px;
+    height: 250px;
+  /*   display: inline-block;
+    float: right; */
+    position: absolute;
+    top:5px;
+    left: 840px;
+    text-align: center;
+}
+#tubiao_right img{
+        width: 190px;
+        height: 190px;
+
+}
+.tubiao_block{
+    width: 275px;
+    height: 250px;
+    text-align: center;
+    margin: 0 auto;
+    display: inline-block;
+}
+.footer_bottom {
+    width: 1200px;
+   margin-top: 50px;
+   text-align: center;
+   padding-bottom: 60px;
+}
+._blank{
+    clear: both;
+}

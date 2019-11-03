@@ -4,95 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>个人实训内容</title>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
-    </script>
-<style>
-  h1{
-    text-align: center;
-  }
-  ul{
-     
-      list-style-type: none;
-    /*  */
-   /*   background-color: #777; */
-  }
-  #wrap{
-       width: 500px;
-       height: 500px;
-       margin: 200px auto;
-      
-  }
-  li{
-     padding: 5px ;
-     background-color: whitesmoke;
-     border-bottom: #777 dashed 1px;
-  }
-  li:last-child{
-    border-bottom-color: whitesmoke;
-  }
-  a{
-   text-decoration: none;
-   padding-left: 5px;
-   color: black;
-  }
-  li:hover{
-    background-color: black;
-    color: white;
-  }
+    <title>qiyezhan</title>
+    <link rel="stylesheet" href="qiyezhan.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 
-</style>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
-   <div>
-        <h1>首页</h1>
-        <hr>
-   </div>
-          <script>
-          $(document).ready(function(){
-           var n=$("ul li").length;
-           console.log(n);
-           for(var i=0;i<n;i++){
-             $("a").eq(i).before(i+1+".")
-           }
-           $("li").mouseenter(function(){
-            $(this).children("a").css(
-              {
-                "color":"white"
-              }
-            )
-           })
-           $("li").mouseleave(function(){
-            $(this).children("a").css(
-              {
-                "color":"black"
-              }
-            )
-           })
-
-          });
-        /*   $("li").mouseleave(function(){
-              $(this).children("a").css(
-                {
-                  "color":"black"
-                }
-              )
-          }); */
-          </script>
-   <div id="wrap">
-          <h3>请访问以下主要地址：</h3>
-    <ul>
-            
-            <li> <a href="coffee-div.html">coffee-div.html咖啡实例</a></li>
-            <li> <a href="portfolio.html">portfolio.html个人主页</a></li>
-            <li> <a href="conter.html">conter.html计算器</a></li>
-            <li> <a href="goods.html">goods.html商品的添加和删除</a></li>
-            <li><a href="danmu.html">danmu.html弹幕作业</a></li>
+<div id="wrap">
+    <div id="_head"><!-- 头部 -->
+        <div id="head_link">
+          
+                <div id="head_left">   
+                    <img src="001.png" alt="">
+                    <span>约电影</span> 
+                </div>
+             
+                <div id="head_right">
+                    <ul>
+                            <li><a href="content.html">我的目录</a></li>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="news.html">新闻</a></li>
+                        <li><a href="about.html">关于我们</a></li>
+                    </ul>
+                </div>
    
+        </div>
+      
+        <div id="head_img">
+            <img src="006.jpg" alt="">
+        </div>
+     
+    </div>
+    <div id="content_wrap"><!-- 内容 -->
+        <!--  -->
+        <h4>服务范围</h4>
+         <div id="serve_area">
+           
+             <div class="img_serve">
+                    <img src="06.png" alt="">
+                    <p>寻仇之路</p>
+             </div>
+             <div class="img_serve">
+                <img src="05.png" alt="">
+                <p>守护正义</p>
+             </div>
+             <div class="img_serve">
+            <img src="07.png" alt="">
+            <p>寻觅天书</p>
+            </div>
+            <div class="img_serve">
+                <img src="08.png" alt="">
+                <p>消灭兽神</p>
+            </div>
+         </div>
+         <!--  -->
+         <!--  -->
+         <div id="description_team">
+                <h4>团队介绍</h4>
+            <div class="role_bar">
+                <div class="role">
+                    <img src="50.jpg" alt="">
+                </div>
+                <div class="role_description" class="float_r">
+                    <h4>张小凡</h4>
+                    <div class="descript_body">
+                        <span>
+                            
+                            咖啡树是属茜草科多年生常绿灌木或小乔木，日常饮用的咖啡是用咖啡豆配合各种不同的烹煮器具制作出来的，
+                            而咖啡豆就是指咖啡树果实里面的果仁，再用适当的方法烘焙而成，一杯标准的咖啡品尝起来的味道不应该是苦涩的，
+                        
+                         </span> 
+                    </div>
+                    <div class="descript_footer">
+                        <hr>
+                       <span>
+                        能&nbsp&nbsp&nbsp&nbsp&nbsp力：咖啡树是属茜草科多年生常绿灌木或小乔木,  而咖啡豆就是指咖啡树果实里面的果仁，
+                       </span>
+                    </div>
+                   
+                </div>
+                <div class="_blank"></div>
+            </div>
+            <div class="_blank"></div>
+            <!-- ----------------------------------->
+            <div class="role_bar">
+                <div class="role_description" id="float_l">
+                    <h4>碧瑶</h4>
+                    <div class="descript_body">
+                            <span>
+                                
+                                咖啡树是属茜草科多年生常绿灌木或小乔木，日常饮用的咖啡是用咖啡豆配合各种不同的烹煮器具制作出来的，
+                                而咖啡豆就是指咖啡树果实里面的果仁，再用适当的方法烘焙而成，一杯标准的咖啡品尝起来的味道不应该是苦涩的，
+                            
+                             </span> 
+                        </div>
+                        <div class="descript_footer">
+                            <hr>
+                           <span>
+                            能&nbsp&nbsp&nbsp&nbsp&nbsp力：咖啡树是属茜草科多年生常绿灌木或小乔木,  而咖啡豆就是指咖啡树果实里面的果仁，
+                           </span>
+                        </div>
+                </div>
+                <div class="role">
+                    <img src="51.jpg" alt="">
+                </div>
+                <div class="_blank"></div>
+            </div>
+            <!-- ----------------------------------------->
+            <div class="role_bar">
+                <div class="role">
+                    <img src="52.jpg" alt="">
+                </div>
+                <div class="role_description" class="float_r">
+                    <h4>陆雪琪</h4>
+                    <div class="descript_body">
+                            <span>
+                                
+                                咖啡树是属茜草科多年生常绿灌木或小乔木，日常饮用的咖啡是用咖啡豆配合各种不同的烹煮器具制作出来的，
+                                而咖啡豆就是指咖啡树果实里面的果仁，再用适当的方法烘焙而成，一杯标准的咖啡品尝起来的味道不应该是苦涩的，
+                            
+                             </span> 
+                        </div>
+                        <div class="descript_footer">
+                            <hr>
+                           <span>
+                            能&nbsp&nbsp&nbsp&nbsp&nbsp力：咖啡树是属茜草科多年生常绿灌木或小乔木,  而咖啡豆就是指咖啡树果实里面的果仁，
+                           </span>
+                        </div>
+                </div>
+                <div class="_blank"></div>
+           </div> 
+ 
 
-    </ul>
+         <!--  -->
+         
+         
+         <div id="news">
+                <h4>新闻动态</h4>
+                <div class="new_info">
+                        <ul id="new">
+                          
+                        </ul>
+                        <div class="_blank"></div>
+                </div>
+         </div>
 
-  </div>
-   
+    </div>
+</div>
+<!-- -------------------------------------------------------------- -->
+    <div id="footer"><!-- 页脚 -->
+        <div id="tubiao_area">
+            <div class="tubiao_left">
+                <div class="tubiao_block">
+                      <img src="address-l.png" alt="">
+                      <p>福州--高新区</p>
+                </div>
+
+                <div class="tubiao_block">
+                        <img src="mail-l.png" alt="">
+                        <p>example@qq.com</p>
+                  </div>
+                  <div class="tubiao_block">
+                        <img src="customservice-f.png" alt="">
+                        <p>050-140-13</p>
+                  </div>
+                <!-- ------------- -->
+               
+       
+            </div>
+            <div id="tubiao_right">
+                 <img src="70.jpg" alt="">
+                 <p>扫一扫</p>
+            </div>
+
+        </div>
+        <div class="footer_bottom"> 
+            <hr>
+              <p>版权所有@请勿抄袭</p>
+        </div>
+
+    </div>
+
 </body>
+<script src="qiyezhan.js"></script>
 </html>

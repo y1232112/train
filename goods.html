@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>商品的添加和删除</title>
     <style>
-    .danger{
+        .danger{
     color: red;
     }
     </style>
 </head>
+
 <body>
     <h2>商品列表的添加和删除</h2>
     <div id="message"></div>
     <ul id="goods">
-        <li>苹果</li>
+        <li class="newg">苹果</li>
 
     </ul>
     <div>
@@ -26,38 +28,56 @@
         <input type="text" id="name">
         <button id="add">添加</button>
     </div>
-    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
-    </script>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <script>
-     $(document).ready(
-         function(){
-/*  */
-            $('#add').click(function(){
-                console.log('value:',$('#name').val());
-             $('#goods').append('<li>'+$('#name').val()+'</li>');
-             $('#message').html('添加了商品:'+$('#name').val());
-             $('message').removeClass('danger');
-             $('#goods li').click(function(){
-                 $('#message').html('删除了商品：'+$(this).text());
-                 $('#message').addClass('danger');
-                 $(this).remove();
-             });
+        $(document).ready(function () {
+            /* --------------zmock测试代码----------------------------------------------- */
+            axios.get('http://mock-api.com/7gPXpPgl.mock/goods-page1')
+                .then(function (res) {/*如果成功进入.then*/
+                    console.log('data', res.data);
+                    //循环res.data的数据将每一条数据存入#goods里
+                    for(var i=0;i<res.data.length;i++){
+                 $("#goods").append("<li class='newg'>"+res.data[i].name+" "+"￥"+res.data[i].price+"</li>");
+                 $('.newg').click(function () {
+                $('#message').html('删除了商品：' + $(this).text());
+                $('#message').addClass('danger');
+                $(this).remove();
             });
-/*  */
-   $('#goods li').click(function(){
-                 $('#message').html('删除了商品：'+$(this).text());
-                 $('#message').addClass('danger');
-                 $(this).remove();
-             });
-/*  */
-             $('#delAll').click(function(){
-                   $('#goods li').remove();
-             });
-       
-     });
+             }
+                }).catch(function (res) {
+                    console.log('error', err);
+                })
+             /* -------------------------------------------------------------------------- */
+             /*  */
+        
+            $('#add').click(function () {
+                console.log('value:', $('#name').val());
+                $('#goods').append('<li>' + $('#name').val() + '</li>');
+                $('#message').html('添加了商品:' + $('#name').val());
+                $('message').removeClass('danger');
+                $('#goods li').click(function () {
+                    $('#message').html('删除了商品：' + $(this).text());
+                    $('#message').addClass('danger');
+                    $(this).remove();
+                });
+            });
+            /*  */
+            $('.newg').click(function () {
+                $('#message').html('删除了商品：' + $(this).text());
+                $('#message').addClass('danger');
+                $(this).remove();
+            });
+            /*  */
+            $('#delAll').click(function () {
+                $('#goods li').remove();
+            });
 
-    
+        });
+
+
     </script>
 
 </body>
+
 </html>
