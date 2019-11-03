@@ -9,7 +9,7 @@ $(document).ready(function(){
        for(var i=0;i<res.data.length;i++){
         console.log(res.data[i]);
         $("#new").append("<li class='new'><a href='news-detail.html?id="+res.data[i].id+"'><img src='"+res.data[i].src+"'><div id='r_p'><p class='new_title'>"+res.data[i].new_title
-           +"</p><p class='new_date'>"+res.data[i].date+"</p><p class='new_content'>"+res.data[i]+"</P></div></a></li>"
+           +"</p><p class='new_date'>"+res.data[i].date+"</p><p class='new_content'>"+res.data[i].new_content+"</P></div></a></li>"
         )
        }
        n=1;
@@ -28,7 +28,7 @@ $("#button1").click(function(){
        for(var i=0;i<res.data.length;i++){
         console.log(res.data[i]);
         $("#new").append("<li class='new'><a href='news-detail.html?id="+res.data[i].id+"'><img src='"+res.data[i].src+"'><div id='r_p'><p class='new_title'>"+res.data[i].new_title
-        +"</p><p class='new_date'>"+res.data[i].date+"</p><p class='new_content'>"+res.data[i]+"</P></div></a></li>"
+        +"</p><p class='new_date'>"+res.data[i].date+"</p><p class='new_content'>"+res.data[i].new_content+"</P></div></a></li>"
      )
        }
        n=1;
@@ -46,7 +46,7 @@ $("#button2").click(function(){
        for(var i=0;i<res.data.length;i++){
         console.log(res.data[i]);
         $("#new").append("<li class='new'><a href='news-detail.html?id="+res.data[i].id+"'><img src='"+res.data[i].src+"'><div id='r_p'><p class='new_title'>"+res.data[i].new_title
-           +"</p><p class='new_date'>"+res.data[i].date+"</p><p class='new_content'>"+res.data[i]+"</P></div></a></li>"
+           +"</p><p class='new_date'>"+res.data[i].date+"</p><p class='new_content'>"+res.data[i].new_content+"</P></div></a></li>"
         )
        }
        n=1;
