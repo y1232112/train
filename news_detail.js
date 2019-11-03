@@ -9,7 +9,7 @@ console.log(i)
 $(document).ready(function() {
     /**启用动画 */
     $(".loading i").css("animation-play-state","running");
-    axios.get('http://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page')
+    axios.get('https://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page')
             .then(function(res) {
                 console.log(res.data[i]);
                     $('title').html(res.data[i].new_title);

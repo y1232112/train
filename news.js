@@ -2,7 +2,7 @@
 
 
 $(document).ready(function(){
-    axios.get('http://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page1')
+    axios.get('https://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page1')
     .then(function(res){
         /*如果成功进入.then*/
      
@@ -20,7 +20,7 @@ $(document).ready(function(){
 })
 $("#button1").click(function(){
     $("#new li").remove();
-    axios.get('http://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page1')
+    axios.get('https://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page1')
     .then(function(res){
         /*如果成功进入.then*/
        console.log('data', res.data[0].src);
@@ -38,7 +38,7 @@ $("#button1").click(function(){
 })
 $("#button2").click(function(){
     $("#new li").remove();
-    axios.get('http://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page2')
+    axios.get('https://5dbd5d3b05a6f30014bcac47.mockapi.io/new_list_page2')
     .then(function(res){
         /*如果成功进入.then*/
        console.log('data', res.data[0].src);
